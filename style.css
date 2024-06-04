@@ -1,0 +1,350 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.main{
+    background-color: #16172C;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+nav {
+    width: 100vw;
+    padding: 10px 10px 0px 10px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color:#16172C;
+    z-index: 100;
+}
+
+.links h4 a {
+    text-decoration: none;
+    color:white;
+    font-size: x-large;
+    font-family: "Oswald", sans-serif;
+    padding: 0px 3vw;
+    position: relative;
+    z-index: 9;
+    transition: all ease 0.4s;
+}
+
+.links h4 {
+    overflow: hidden;
+}
+
+.page1 {
+    width: 100%;
+    background-color:#16172C;
+    overflow: hidden;
+}
+
+.links h4 a::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#F8E2A8;
+    left: 0;
+    bottom: -112%;
+    transition: all ease 0.4s;
+    z-index: -1;
+}
+
+.links h4 a:hover::after {
+    bottom: -15%;
+    border-radius: 0px;
+}
+
+.links h4 a:hover {
+    color: #16172C;
+}
+
+#contt {
+    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-right: 10vw;
+}
+
+.pic {
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    border: 2px solid  #F8E2A8 ;
+}
+
+.ishita {
+    height: 40%;
+    font-size: 8vw;
+    display: flex;
+    padding-left: 2vw;
+    align-items: end;
+    justify-content: left;
+    color:white;
+    font-family: "Oswald", sans-serif;
+    /* font-style: italic; */
+}
+
+.arora {
+    height: 20%;
+    font-size: 8vw;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    color:white;
+    font-family: "Oswald", sans-serif;
+    transform: translateY(-40%);
+    /* font-style: italic; */
+}
+
+.ds {
+    height: 40%;
+    width: 100%;
+    color: #16172C;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.9vw;
+    padding: 1vw;
+    background-color : #F8E2A8;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue a {
+    margin: 0px 10px;
+}
+
+footer {
+    background-color:#F8E2A8;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#C {
+    display: flex;
+    justify-content: center;
+}
+
+#C p {
+    margin-top: 3%;
+}
+
+#C a img:hover {
+    transform: scale(1.1);
+}
+
+.flower {
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    background-color:#F8E2A8;
+    transform: translate(75vw, 1vw);
+    border-radius: 150px;
+}
+
+.flowerr {
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    background-color:#F8E2A8;
+    transform: translate(87vw, 13.3vw);
+    border-radius: 150px;
+}
+
+.flowerrr {
+    height: 4vw;
+    width: 4vw;
+    position: absolute;
+    font-size: x-large;
+    background-color:#F8E2A8;
+    transform: translate(87vw, 24vw);
+    border-radius: 150px;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    z-index: 500;
+}
+
+.flowerrrr {
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    transform: translate(35vw, 18vh);
+    font-size: 7vw;
+    font-weight: 800;
+    color: #b12c2c00;
+    text-align: center;
+    z-index: 999;
+    animation-name: anime2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes anime {
+    0% {
+        width: 100vw;
+        height: 150vh;
+        border-radius: 0px;
+        transform: translate(0vw, 0vw);
+    }
+
+    70% {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        transform: translate(0vw, 0vw);
+    }
+
+    80% {
+        width: 100vw;
+        height: 4vw;
+        border-radius: 0px;
+        transform: translate(0vw, 25vw);
+    }
+
+    90% {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 150px;
+        transform: translate(87vw, 25vw);
+    }
+
+    100% {
+        border-radius: 150px;
+    }
+}
+
+@keyframes anime2 {
+    0% {
+        color:#F8E2A8;
+    }
+
+    20% {
+        color:#F8E2A8;
+    }
+
+    30% {
+        color:#131538;
+        font-size: 7vw;
+    }
+
+    70% {
+        color:#131538;
+    }
+
+    80% {
+        color: rgba(0, 0, 0, 0);
+        font-size: 7vw;
+    }
+
+    100% {
+        font-size: 0%;
+    }
+}
+
+
+
+.dashh{
+    background-color: #F8E2A8;
+    height: 5px;
+    width: 90vw;
+}
+
+.page2 {
+    background-color:#16172C;
+}
+
+.projecthead {
+    font-size: 4vw;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: auto;
+    padding-top: 2vw;
+    color:white ;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+}
+.cardd{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.page3 {
+    min-height: 70vh;
+    background-color:#16172C;
+}
+
+.hello {
+    font-size: 4vw;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: auto;
+    padding-top: 2vw;
+    color: white;
+}
+
+.submit {
+    padding: 0 20vw 0 20vw;
+}
+
+.bton {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+.form-label {
+    color:white;
+    font-family: "Oswald", sans-serif;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+
+.mid{
+    display: flex;
+    justify-content: center;
+}
+
+
